@@ -1,0 +1,126 @@
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input[type="text"], button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.filters {
+    display: flex;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.filters button {
+    padding: 8px 10px;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+#taskList li:hover {
+    background-color: #f0f0f5;
+}
+
+#taskList li .completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#taskList li span {
+    flex-grow: 1;
+    text-align: left;
+}
+
+#taskList li button {
+    background-color: #f0f0f5;
+    color: #333;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12px;
+}
+
+#taskList li button:hover {
+    background-color: #ddd;
+}
+
+#noTasksMessage {
+    color: #888;
+    font-size: 14px;
+    margin-top: 10px;
+}
